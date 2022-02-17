@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.AddForecastPage"
+             Title="AddForecastPage"
+             BackgroundColor="White">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <DatePicker x:Name="ForecastDate" HorizontalOptions="Center" DateSelected="DatePicker_DateSelected"></DatePicker>
+        <HorizontalStackLayout Padding="0,20,0,0">
+            <Label FontSize="20"  Text="Number of Days"/>
+            <Entry x:Name="numDays" WidthRequest="150" Margin="20,0,0,0"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Padding="0,20,0,0">
+            <Label FontSize="20"  Text="Choose a Project"/>
+            <Picker x:Name="projPicker" Margin="20,0,0,0" >
+                
+            </Picker>
+
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Padding="130,20,0,0">
+            <Button WidthRequest="70" Text="Add" Clicked="OnAddClick"/>
+            <Button WidthRequest="70" Text="Cancel" Clicked="OnCancelClick"/>
+        </HorizontalStackLayout>
+    </StackLayout>
+</ContentPage>

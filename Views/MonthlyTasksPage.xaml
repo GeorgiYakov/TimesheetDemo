@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MonthlyTasksPage"
+             Title="MonthlyTasksPage"
+             BackgroundColor="White">
+    <VerticalStackLayout Padding="30,30,0,0">
+        <HorizontalStackLayout>
+            <DatePicker ></DatePicker>
+            <HorizontalStackLayout Padding="40,0,0,0">
+                <Label Text="From:" Margin="0,0,10,0"></Label>
+                <TimePicker ></TimePicker>
+                <Label Margin="30,0,10,0" Text="To:"></Label>
+                <TimePicker ></TimePicker>
+                <Label Text="Pause:" Margin="20,0,20,0"></Label>
+                <Entry WidthRequest="50"></Entry>
+            </HorizontalStackLayout>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Padding="0,30,0,0">
+            <Label Text="Project  "></Label>
+            <Picker Margin="0,0,60,0" WidthRequest="180" x:Name="ProjPicker"></Picker>
+            <Label Text="Description" Margin="0,0,20,0"></Label>
+            <Entry WidthRequest="500" ></Entry>
+        </HorizontalStackLayout>
+        <Button Text="Save" Clicked="Button_Clicked" Margin="40,30,0,0" WidthRequest="80"></Button>
+        <Grid Margin="0,50,0,0" BackgroundColor="LightGray">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="70"></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0"  Text="Day"></Label>
+            <Label Grid.Row="0" Grid.Column="1"  Text="Project"></Label>
+            <Label Grid.Row="0" Grid.Column="2"  Text="From"></Label>
+            <Label Grid.Row="0" Grid.Column="3"  Text="To"></Label>
+            <Label Grid.Row="0" Grid.Column="4"  Text="Pause"></Label>
+            <Label Grid.Row="0" Grid.Column="5"  Text="Description"></Label>
+
+        </Grid>
+        <ListView  x:Name="dailyTasksView" VerticalOptions="Center" HorizontalOptions="Center" CachingStrategy="RecycleElement">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Margin="5" RowSpacing="2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="100"></ColumnDefinition>
+                                <ColumnDefinition Width="70"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Row="0" Grid.Column="0"  Text="{Binding Day}"></Label>
+                            <Label Grid.Row="0" Grid.Column="1"  Text="{Binding Project}"></Label>
+                            <Label Grid.Row="0" Grid.Column="2"  Text="{Binding From}"></Label>
+                            <Label Grid.Row="0" Grid.Column="3"  Text="{Binding To}"></Label>
+                            <Label Grid.Row="0" Grid.Column="4"  Text="{Binding Pause}"></Label>
+                            <Label Grid.Row="0" Grid.Column="5"  Text="{Binding Description}"></Label>
+                            <Button Grid.Row="0" Grid.Column="6" Text="Edit" />
+
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </VerticalStackLayout>
+</ContentPage>

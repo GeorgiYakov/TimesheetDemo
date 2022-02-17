@@ -1,0 +1,64 @@
+is_global = true
+build_property.TargetFramework = net6.0-windows10.0.19041
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MauiApp1
+build_property.ProjectDir = C:\Users\gyakov\Documents\Projects\MauiApp1\
+
+[C:/Users/gyakov/Documents/Projects/MauiApp1/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/gyakov/Documents/Projects/MauiApp1/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/gyakov/Documents/Projects/MauiApp1/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/gyakov/Documents/Projects/MauiApp1/Views/AddForecastPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Views.AddForecastPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\AddForecastPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\AddForecastPage.xaml
+
+[C:/Users/gyakov/Documents/Projects/MauiApp1/Views/ForecastPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Views.ForecastPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ForecastPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ForecastPage.xaml
+
+[C:/Users/gyakov/Documents/Projects/MauiApp1/Views/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Views.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\LoginPage.xaml
+
+[C:/Users/gyakov/Documents/Projects/MauiApp1/Views/MonthlyTasksPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Views.MonthlyTasksPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\MonthlyTasksPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\MonthlyTasksPage.xaml
+
+[C:/Users/gyakov/Documents/Projects/MauiApp1/Views/ProjectsPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Views.ProjectsPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\ProjectsPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\ProjectsPage.xaml
+
+[C:/Users/gyakov/Documents/Projects/MauiApp1/Views/WorkdaysPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiApp1.Views.WorkdaysPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Views\WorkdaysPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Views\WorkdaysPage.xaml

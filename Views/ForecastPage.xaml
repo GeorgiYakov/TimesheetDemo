@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.ForecastPage"
+             Title="ForecastPage"
+             BackgroundColor="White">
+    <StackLayout Padding="10,20,0,0">
+        <Grid BackgroundColor="LightGrey">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions >
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="70"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0"  VerticalOptions="Start" Text="Date"></Label>
+            <Label Grid.Row="0" Grid.Column="1" VerticalOptions="Center" Text="Forecast Project"></Label>
+            <Label Grid.Row="0" Grid.Column="2" VerticalOptions="End" Text="#Days"></Label>
+        </Grid>
+        <ListView x:Name="ForecastListView" VerticalOptions="Center" HorizontalOptions="Center" CachingStrategy="RecycleElement">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid Margin="5" RowSpacing="2">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"></RowDefinition>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="100"></ColumnDefinition>
+                                <ColumnDefinition Width="*"></ColumnDefinition>
+                                <ColumnDefinition Width="70"></ColumnDefinition>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Row="0" Grid.Column="0"  Text="{Binding Date}"></Label>
+                            <Label Grid.Row="0" Grid.Column="1"  Text="{Binding ProjectName}"></Label>
+                            <Label Grid.Row="0" Grid.Column="2"  Text="{Binding NumOfDays}"></Label>
+                            
+                        </Grid>
+                    </ViewCell>                    
+                </DataTemplate>
+            </ListView.ItemTemplate>            
+        </ListView>
+        
+        <Button Margin="0,20,0,0" Text="Add Forecast" Clicked="OpenForecastWindow" WidthRequest="150"></Button>
+        <Button Text="Test props" Clicked="Button_Clicked"></Button>
+        <Label WidthRequest="400" x:Name="testLabel"></Label>
+    </StackLayout>
+</ContentPage>
