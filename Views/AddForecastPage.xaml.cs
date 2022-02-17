@@ -9,7 +9,7 @@ public partial class AddForecastPage : ContentPage
 		InitializeComponent();
 
         projPicker.ItemsSource = ProjectsList.GetPojects().Select(p => p.Title).ToList();
-
+        //This is mvvm branch
     }
 
     private async void OnAddClick(object sender, EventArgs e)
