@@ -42,7 +42,7 @@
         </ListView>
         
         <Button Margin="0,20,0,0" Text="Add Forecast" Clicked="OpenForecastWindow" WidthRequest="150"></Button>
-        <Button Text="Test props" Clicked="Button_Clicked"></Button>
+        <Button Text="Reload" Clicked="Button_Clicked"></Button>
         <Label WidthRequest="400" x:Name="testLabel"></Label>
     </StackLayout>
 </ContentPage>

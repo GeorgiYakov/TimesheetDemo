@@ -46,5 +46,6 @@
             </ListView.ItemTemplate>
         </ListView>
         <Button Margin="0,30,0,0" Text="Load Projects" WidthRequest="150" HorizontalOptions="End"></Button>
+        <Button Margin="0,30,0,0" Text="Send invoice" WidthRequest="150" HorizontalOptions="End"></Button>
     </StackLayout>
 </ContentPage>

@@ -1,13 +1,15 @@
+using System.Collections.ObjectModel;
+
 namespace MauiApp1;
 
 public partial class ForecastPage : ContentPage
 {
-	List<Forecast> forecastList;
+	ObservableCollection<Forecast> forecastList;
 	public ForecastPage()
 	{
 		InitializeComponent();
 
-		forecastList = new List<Forecast>
+		forecastList = new ObservableCollection<Forecast>
 		{
 			new Forecast{
 				Date = new DateTime(2022,2,7),
@@ -36,20 +38,22 @@ public partial class ForecastPage : ContentPage
 			},
 		};
 		Application.Current.Properties["Forecast"] = null;
-		if (Application.Current.Properties["Forecast"] != null)
-        {
-			forecastList.Add((Forecast)Application.Current.Properties["Forecast"]);
-			ForecastListView.ItemsSource = null;
-			ForecastListView.ItemsSource = forecastList;
-		}
+		
 
 		ForecastListView.ItemsSource = forecastList; 
 
 
 	}
+	protected override void OnAppearing()
+	{
+		if (Application.Current.Properties["Forecast"] != null)
+		{
+			forecastList.Add((Forecast)Application.Current.Properties["Forecast"]);
+		}
+	}
 
 
-    private async void OpenForecastWindow(object sender, EventArgs e)
+	private async void OpenForecastWindow(object sender, EventArgs e)
     {
         var route = $"{nameof(AddForecastPage)}";
 		await Shell.Current.GoToAsync(route);
@@ -58,8 +62,6 @@ public partial class ForecastPage : ContentPage
 
     private void Button_Clicked(object sender, EventArgs e)
     {
-		testLabel.Text = Application.Current.Properties["Forecast"].ToString();
-		forecastList.Add((Forecast)Application.Current.Properties["Forecast"]);
 		ForecastListView.ItemsSource = null;
 		ForecastListView.ItemsSource = forecastList;
 	}

@@ -18,7 +18,7 @@ public partial class AddForecastPage : ContentPage
 
         Forecast f = new Forecast { Date = date, NumOfDays = Int32.Parse(numDays.Text), ProjectName = chosenProj };
         Application.Current.Properties["Forecast"] = f;
-        await Shell.Current.GoToAsync("..");
+        await Shell.Current.GoToAsync("//ForecastPage");
     }
     private async void OnCancelClick(object sender, EventArgs e)
     {

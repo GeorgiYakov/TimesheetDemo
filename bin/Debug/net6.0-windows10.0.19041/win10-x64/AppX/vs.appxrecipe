@@ -29,13 +29,13 @@
     <AppXManifest Include="C:\Users\gyakov\Documents\Projects\MauiApp1\bin\Debug\net6.0-windows10.0.19041\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2022-02-17T09:26:48.825</Modified>
+      <Modified>2022-02-17T11:18:29.875</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\gyakov\Documents\Projects\MauiApp1\bin\Debug\net6.0-windows10.0.19041\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2022-02-17T09:26:48.518</Modified>
+      <Modified>2022-02-17T11:18:29.645</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gyakov\Documents\Projects\MauiApp1\bin\Debug\net6.0-windows10.0.19041\win10-x64\MauiApp1.runtimeconfig.json">
       <PackagePath>MauiApp1.runtimeconfig.json</PackagePath>
@@ -43,11 +43,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gyakov\Documents\Projects\MauiApp1\bin\Debug\net6.0-windows10.0.19041\win10-x64\MauiApp1.dll">
       <PackagePath>MauiApp1.dll</PackagePath>
-      <Modified>2022-02-17T09:26:47.375</Modified>
+      <Modified>2022-02-17T11:18:28.801</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gyakov\Documents\Projects\MauiApp1\obj\Debug\net6.0-windows10.0.19041\win10-x64\apphost.exe">
       <PackagePath>MauiApp1.exe</PackagePath>
-      <Modified>2022-02-17T09:26:47.465</Modified>
+      <Modified>2022-02-17T11:18:28.833</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gyakov\Documents\Projects\MauiApp1\bin\Debug\net6.0-windows10.0.19041\win10-x64\MauiApp1.deps.json">
       <PackagePath>MauiApp1.deps.json</PackagePath>
@@ -1051,7 +1051,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gyakov\Documents\Projects\MauiApp1\obj\Debug\net6.0-windows10.0.19041\win10-x64\Platforms\Windows\App.xbf">
       <PackagePath>Platforms\Windows\App.xbf</PackagePath>
-      <Modified>2022-02-17T09:26:47.200</Modified>
+      <Modified>2022-02-17T11:18:28.652</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\gyakov\Documents\Projects\MauiApp1\obj\Debug\net6.0-windows10.0.19041\win10-x64\resizetizer\sp\appiconfgSplashScreen.scale-100.png">
       <PackagePath>appiconfgSplashScreen.scale-100.png</PackagePath>
